@@ -3,6 +3,7 @@
 import React from 'react'
 
 import Button from '@mui/material/Button';
+import Login from '../Components/Login';
 
 
 
@@ -68,7 +69,7 @@ const Nav = () => {
 
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Log in</a>
+                                <Login />
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Sign up</a>
