@@ -1,0 +1,26 @@
+.main-container {
+    position: relative;
+    background-Repeat: no-repeat;
+    width: auto;
+    height: 700px;
+    background-size: cover;
+    background-Image: url("https://www.freegreatpicture.com/files/photo106/52819-shopping.jpg")
+}
+
+
+img {
+    width: 500px;
+    height: 400px;
+
+    margin: 20px;
+}
+
+.container-child {
+    padding: 20px;
+    margin: 20px;
+}
+
+.content {
+    text-align: center;
+
+}
