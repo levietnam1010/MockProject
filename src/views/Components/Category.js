@@ -31,8 +31,8 @@ const Category = () => {
                         </div>
 
                         <div className='term' style={{ position: 'relative' }}>
-                            <input className='form-control' placeholder='Add search term...' type="search"  ></input>
-                            <i className="fas fa-search" style={{ position: 'absolute', top: '15%', right: '1%' }}></i>
+                            <input className='form-control' placeholder='Add search term...'  ></input>
+                            <i className="fas fa-search" style={{ position: 'absolute', top: '10%', right: '1%' }}></i>
                             <button className='btn btn-danger' style={{ margin: '15px' }}>Clear all</button>
                         </div>
 
@@ -66,7 +66,7 @@ const Category = () => {
                     <div className='col-sm-10'>
                         <div className='row'>
                             <div className="d-flex justify-content-around top-head">
-                                <div> <span>127 Results</span> </div>
+                                <div> <h6>Results : <span style={{ color: 'red' }}> 127 products</span></h6>  </div>
 
                                 <div> <i className="fas fa-align-justify"></i> <i className="fas fa-th"></i>
 
@@ -75,9 +75,9 @@ const Category = () => {
                                     <div>
                                         <select className="form-select form-select-sm">
 
-                                            <option value="1">Women's</option>
-                                            <option value="2">Mens'</option>
-                                            <option value="3">Kid</option>
+                                            <option value="1">BEST SELLERS</option>
+                                            <option value="2">HIGH VOTES</option>
+                                            <option value="3">DISCOUNT</option>
                                         </select>
                                     </div>
                                 </div>
