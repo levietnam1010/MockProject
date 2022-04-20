@@ -1,64 +1,60 @@
 import React from 'react';
+import Footer from '../Layout_Footer/Footer';
+import Nav from '../Nav/Nav';
+import '../style/Login.css';
 
 function Login(props) {
     return (
         <>
-            <section className="vh-100">
-                <div className="container-fluid h-custom">
-                    <div className="row d-flex justify-content-center align-items-center h-100">
-                        <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                            <form>
-                                <div className="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                                    <p className="lead fw-normal mb-0 me-3">Sign in with</p>
-                                    <button type="button" className="btn btn-primary btn-floating mx-1">
-                                        <i className="fa fa-facebook-f"></i>
-                                    </button>
+            <Nav />
+            <section className="vh-100 gradient-custom">
+                <div className="container py-5 h-100">
+                    <div className="row d-flex align-items-center justify-content-center h-100">
+                        <div className="col-12 col-lg-9 col-xl-7">
+                            <div className="card shadow-2-strong card-registration" style={{ borderRadius: '15px' }}>
+                                <div className="card-body p-4 p-md-5">
+                                    <form>
+                                        <h2 className="mb-4 pb-2 pb-md-0 mb-md-5 text-center">LOGIN</h2>
+                                        <div className="form-outline mb-4">
+                                            <label className="form-label" for="form1Example13">Email address</label>
+                                            <input type="email" id="form1Example13" className="form-control form-control-lg" />
+                                        </div>
 
-                                    <button type="button" className="btn btn-primary btn-floating mx-1">
-                                        <i className="fa fa-twitter"></i>
-                                    </button>
+                                        <div className="form-outline mb-4">
+                                            <label className="form-label" for="form1Example23">Password</label>
+                                            <input type="password" id="form1Example23" className="form-control form-control-lg" />
+                                        </div>
 
-                                    <button type="button" className="btn btn-primary btn-floating mx-1">
-                                        <i className="fa fa-linkedin-in"></i>
-                                    </button>
+                                        <div className="d-flex justify-content-around align-items-center mb-4">
+                                            <div className="form-check">
+                                                <input className="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                                                <label className="form-check-label" for="form1Example3"> Remember me </label>
+                                            </div>
+                                            <a href="#!">Forgot password?</a>
+                                        </div>
+
+                                        <button type="submit" className="btn btn-primary btn-lg btn-block">Sign in</button>
+
+                                        <div className="divider d-flex align-items-center my-4">
+                                            <p className="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                                        </div>
+
+                                        <a className="btn btn-primary btn-lg btn-block" style={{ backgroundColor: '#3b5998' }} href="#!"
+                                            role="button">
+                                            <i className="fa fa-facebook-f me-2"></i>Continue with Facebook
+                                        </a>
+                                        <a className="btn btn-primary btn-lg btn-block" style={{ backgroundColor: '#55acee' }} href="#!"
+                                            role="button">
+                                            <i className="fa fa-twitter me-2"></i>Continue with Twitter</a>
+
+                                    </form>
                                 </div>
-
-                                <div className="divider d-flex align-items-center my-4">
-                                    <p className="text-center fw-bold mx-3 mb-0">Or</p>
-                                </div>
-
-                                <div className="form-outline mb-4">
-                                    <input type="email" id="form3Example3" className="form-control form-control-lg"
-                                        placeholder="Enter a valid email address" />
-                                    <label className="form-label" for="form3Example3">Email address</label>
-                                </div>
-
-                                <div className="form-outline mb-3">
-                                    <input type="password" id="form3Example4" className="form-control form-control-lg"
-                                        placeholder="Enter password" />
-                                    <label className="form-label" for="form3Example4">Password</label>
-                                </div>
-
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <div className="form-check mb-0">
-                                        <input className="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
-                                        <label className="form-check-label" for="form2Example3">
-                                            Remember me
-                                        </label>
-                                    </div>
-                                    <a href="#!" className="text-body">Forgot password?</a>
-                                </div>
-
-                                <div className="text-center text-lg-start mt-4 pt-2">
-                                    <button type="submit" class="btn btn-primary btn-lg btn-block">LOG IN</button>
-                                    <p className="small fw-bold mt-2 pt-1 mb-0">"Don't have an account?"<a href="#!"
-                                        className="link-danger">Register</a></p>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     );
 }
