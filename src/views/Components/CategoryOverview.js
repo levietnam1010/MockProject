@@ -56,20 +56,20 @@ const CategoryOverview = () => {
                 </div>
                 <div className='head-contain'>
                     <div className='row'>
-                        <div style={{ position: 'relative' }} className='col-sm-3'>
-                            <span style={{ position: 'absolute', top: '5%', left: '10%', fontSize: '25px', fontFamily: 'Courier New', color: 'white' }}>Furniture</span>
+                        <div className='col-sm-3 top-product'>
+                            <span className='top-product-child'>Furniture</span>
                             <img src='https://noithattotdep.net/wp-content/uploads/2017/04/do-go-noi-that-gia-dinh-cao-cap-4.jpg'></img>
                         </div>
-                        <div style={{ position: 'relative' }} className='col-sm-3'>
-                            <span style={{ position: 'absolute', top: '5%', left: '10%', fontSize: '25px', fontFamily: 'Courier New', color: 'white' }}>Bedding</span>
+                        <div className='col-sm-3 top-product'>
+                            <span className='top-product-child'>Bedding</span>
                             <img src='https://vachnganvietnam.vn/wp-content/uploads/2017/01/the-nao-la-noi-that-gia-dinh-cao-cap-1.jpg.webp'></img>
                         </div>
-                        <div style={{ position: 'relative' }} className='col-sm-3'>
-                            <span style={{ position: 'absolute', top: '5%', left: '10%', fontSize: '25px', fontFamily: 'Courier New', color: 'white' }}>Most Liked</span>
+                        <div className='col-sm-3 top-product'>
+                            <span className='top-product-child' >Most Liked</span>
                             <img src='https://luxcasa.vn/img/a/45.jpg'></img>
                         </div>
-                        <div style={{ position: 'relative' }} className='col-sm-3'>
-                            <span style={{ position: 'absolute', top: '5%', left: '10%', fontSize: '25px', fontFamily: 'Courier New', color: 'white' }}>Wall Art</span>
+                        <div className='col-sm-3 top-product'>
+                            <span className='top-product-child'>Wall Art</span>
                             <img src='https://cb.scene7.com/is/image/Crate/MarcelWallArtROSHS17/$web_pdp_main_carousel_med$/190411135228/marcel-teak-wall-art.jpg'></img>
                         </div>
                     </div>

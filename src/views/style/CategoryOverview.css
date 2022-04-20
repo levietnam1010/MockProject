@@ -14,3 +14,16 @@ ul li {
     height: 350px;
 
 }
+
+.top-product {
+    position: relative;
+}
+
+.top-product-child {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white
+}
