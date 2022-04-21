@@ -3,7 +3,7 @@ import Footer from "../Layout_Footer/Footer";
 import Nav from "../Nav/Nav";
 import '../style/Signup.css';
 
-function SignUp(props) {
+function SignUp() {
     return (
         <>
             <Nav />

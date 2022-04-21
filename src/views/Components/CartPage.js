@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../Layout_Footer/Footer';
 import Nav from '../Nav/Nav';
 
-function CartPage(props) {
+function CartPage() {
     return (
         <>
             <Nav />

@@ -3,7 +3,7 @@ import Footer from '../Layout_Footer/Footer';
 import Nav from '../Nav/Nav';
 import '../style/Login.css';
 
-function Login(props) {
+function Login() {
     return (
         <>
             <Nav />
