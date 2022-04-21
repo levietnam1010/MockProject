@@ -8,7 +8,7 @@ import SignUp from './views/Components/SignUp';
 function App() {
   return (
     <div className="container-fluid">
-      <CartPage />
+      <Login />
     </div>
   );
 }
