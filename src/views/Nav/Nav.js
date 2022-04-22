@@ -1,9 +1,8 @@
 
 
 import React from 'react'
-
+import { Routes, Route, Link, NavLink } from 'react-router-dom';
 import Button from '@mui/material/Button';
-
 
 
 
@@ -19,30 +18,25 @@ const Nav = () => {
 
                     <div className="collapse navbar-collapse">
                         <ul className="navbar-nav me-auto">
+
                             <li className="nav-item">
-                                <a className="nav-link active" href="#">Women</a>
+                                <NavLink className="nav-link active" to="#">Women</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="#">Men</a>
+                                <NavLink className="nav-link active" to="#">Men</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Denim</a>
+                                <NavLink className="nav-link" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">About</a>
-                            </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown">
-                                    Category
-                                </a>
-                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                                <NavLink className="nav-link" to="#">About</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link disabled" href="#" aria-disabled="true">Shopping</a>
+                                <NavLink className="nav-link" to="/category">Category</NavLink>
+
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link disabled" to="#" aria-disabled="true">Shopping</NavLink>
                             </li>
                         </ul>
                         <ul className="navbar-nav me-auto">
@@ -58,7 +52,8 @@ const Nav = () => {
                         <div>
                             <form className="d-flex" style={{ position: 'relative' }} >
                                 <div>
-                                    <i className="fas fa-search" style={{ left: '-10%', bottom: '30%', position: 'absolute' }}></i>
+
+                                    <i className="fas fa-search" style={{ left: '-10%', bottom: '30%', position: 'absolute', color: 'blue' }}></i>
                                 </div>
                                 <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
                             </form>
@@ -67,21 +62,26 @@ const Nav = () => {
 
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Log in</a>
+                                <NavLink className="nav-link" to="/login">Log in</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Sign up</a>
+                                <NavLink className="nav-link" to="/signup">Sign up</NavLink>
                             </li>
 
-                            <Button>Flag</Button>
+
 
 
                         </ul>
                     </div>
-                </div>
+                </div >
             </nav >
+            <Routes>
+
+            </Routes>
         </div >
     )
+
+
 }
 
 export default Nav

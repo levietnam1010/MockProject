@@ -1,6 +1,7 @@
 import React from 'react'
-import Nav from '../Nav/Nav'
 
+
+import Nav from '../Nav/Nav'
 import '../style/home.css'
 
 
@@ -9,9 +10,9 @@ const Home = () => {
         <div>
             <div className='container-fluid main-container'>
                 <Nav></Nav>
-
+                <a href='/Category'></a>
                 <div className='content-page' style={{ position: 'absolute', top: '10%', left: '18%', color: 'white', textAlign: 'center' }}>
-                    <h1 id='content' style={{ fontSize: '100px' }}>Crowd-Pleasers</h1>
+                    <h1 id='content' style={{ fontSize: '10vmin' }}>Crowd-Pleasers</h1>
                     <p>Made by us.Loved by you.</p>
 
                     <div>SHOP BEST-SELLERS</div>
@@ -19,7 +20,7 @@ const Home = () => {
                 <p style={{ position: 'absolute', bottom: '10%', left: '5%', color: 'white' }}>Sign Up for 10% off your first order*</p>
             </div>
 
-            <div className='row container-child' >
+            <div className='container-fluid container-child' >
                 <div className=" col-sm-4">
                     <img src='https://images.unsplash.com/photo-1483181957632-8bda974cbc91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBzaG9wcGluZ3xlbnwwfHwwfHw%3D&w=1000&q=80'></img>
 
@@ -47,6 +48,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
+
         </div>
     )
 }

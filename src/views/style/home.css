@@ -8,16 +8,18 @@
 }
 
 
-img {
-    width: 500px;
+.container-child img {
+    width: 600px;
     height: 400px;
 
-    margin: 20px;
+    margin-right: 20px;
 }
 
 .container-child {
-    padding: 20px;
-    margin: 20px;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
 }
 
 .content {

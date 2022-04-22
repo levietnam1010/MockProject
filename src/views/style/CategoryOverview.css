@@ -1,8 +1,6 @@
 img {
-    width: 430px;
-    height: 400px;
-
-    margin: 0px;
+    width: 25vmin;
+    height: 70%;
 }
 
 ul li {
@@ -15,15 +13,21 @@ ul li {
 
 }
 
-.top-product {
+.top-category {
     position: relative;
+
 }
 
-.top-product-child {
+.top-category-child {
     position: absolute;
-    top: 5%;
+    bottom: 14%;
     left: 10%;
-    font-size: 25px;
+    font-size: 2vmin;
     font-family: 'Courier New', Courier, monospace;
-    color: white
+    color: rgb(15, 1, 1)
+}
+
+.top-category :hover {
+
+    border: solid 1px blue;
 }
